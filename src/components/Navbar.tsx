@@ -68,11 +68,6 @@ export default function Navbar() {
                className={scrolled || isOpen ? 'text-black' : 'text-white'}>
               About
             </a>
-            <a href="#blog" 
-               onClick={(e) => handleNavigation(e, '#blog')} 
-               className={scrolled || isOpen ? 'text-black' : 'text-white'}>
-              Blog
-            </a>
             <a href="#contact" 
                onClick={(e) => handleNavigation(e, '#contact')} 
                className={scrolled || isOpen ? 'text-black' : 'text-white'}>
@@ -114,11 +109,6 @@ export default function Navbar() {
                    onClick={(e) => handleNavigation(e, '#about')} 
                    className="block text-black hover:bg-gray-100 rounded px-2 py-1">
                   About
-                </a>
-                <a href="#blog" 
-                   onClick={(e) => handleNavigation(e, '#blog')} 
-                   className="block text-black hover:bg-gray-100 rounded px-2 py-1">
-                  Blog
                 </a>
                 <a href="#contact" 
                    onClick={(e) => handleNavigation(e, '#contact')} 

@@ -34,13 +34,6 @@ export default function Footer() {
                 Projects
               </a>
               <a 
-                href="#blog"
-                onClick={(e) => handleNavigation(e, '#blog')}
-                className="hover:text-indigo-600 transition-colors"
-              >
-                Blog
-              </a>
-              <a 
                 href="#contact"
                 onClick={(e) => handleNavigation(e, '#contact')}
                 className="hover:text-indigo-600 transition-colors"
@@ -67,13 +60,6 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Latest Updates</h3>
             <div className="flex flex-col space-y-2">
-              <a 
-                href="#blog"
-                onClick={(e) => handleNavigation(e, '#blog')}
-                className="hover:text-indigo-600 transition-colors"
-              >
-                Announcements
-              </a>
               <a href="#" className="hover:text-indigo-600 transition-colors">Events</a>
               <a href="#" className="hover:text-indigo-600 transition-colors">Milestones</a>
               <a href="#" className="hover:text-indigo-600 transition-colors">Newsletter</a>
