@@ -1,19 +1,21 @@
-import { Router } from 'next/router'
+type RouterLike = {
+  push: (url: string) => Promise<void> | void;
+}
 
 export const handleSectionNavigation = async (
   e: React.MouseEvent<HTMLAnchorElement>, 
   href: string, 
   pathname: string,
-  router: Router,
+  router: RouterLike,
   closeMenu?: () => void
 ) => {
   e.preventDefault()
-  if (closeMenu) closeMenu() // Only close menu if function is provided
+  if (closeMenu) closeMenu()
 
   // If we're not on the home page, navigate to home first
   if (pathname !== '/') {
     // Store the target section ID
-    const targetSection = href.substring(1) // Remove the # from href
+    const targetSection = href.substring(1)
     
     // Navigate to home page with the section as a query parameter
     await router.push(`/?section=${targetSection}`)
